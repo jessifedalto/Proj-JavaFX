@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.EditSceneController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="301.0" style="-fx-background-color: #054F77;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-receive-cash-100.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="382.0" layoutY="72.0" text="Edite seu perfil!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="384.0" layoutY="125.0" text="Usuário" />
+      <TextField id="tfUsername" fx:id="tfUsername" disable="true" layoutX="384.0" layoutY="142.0" />
+      <Label layoutX="384.0" layoutY="174.0" text="Email" />
+      <TextField id="tfUserEmail" fx:id="tfUserEmail" layoutX="384.0" layoutY="191.0" />
+      <Label layoutX="384.0" layoutY="224.0" text="Aniversário" />
+      <DatePicker id="tfUserBirth" fx:id="tfUserBirth" disable="true" layoutX="384.0" layoutY="241.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="384.0" layoutY="275.0" text="Senha" />
+      <PasswordField id="pfUserpass" fx:id="pfUserpass" layoutX="384.0" layoutY="292.0" />
+      <Button id="btRegister" fx:id="btRegister" layoutX="384.0" layoutY="332.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #054F77;" text="Editar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
